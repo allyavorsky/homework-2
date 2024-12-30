@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 1 | Form</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="../style.css">
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../pages/about.html">About</a>
+        <a href="../pages/articles.html">Articles</a>
+        <a href="../pages/gallery.html">Gallery</a>
+        <a href="../pages/contacts.html">Contacts</a>
+      </nav>
+
+      <a href="../pages/form.html" class="button">Form</a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Form</h1>
+      </section>
+
+      <section>
+        <h2>Skill Quiz</h2>
+        <hr>
+        <form id="form" action="form" method="POST">
+          <fieldset>
+            <legend>Contact Information</legend>
+            <div>
+              <label for="name">Full Name *</label>
+              <input type="text" name="name" id="name" placeholder="Name" required>
+            </div>
+            <div>
+              <label for="surname">Surname *</label>
+              <input type="text" name="surname" id="surname" placeholder="Surname" required>
+            </div>
+            <div>
+              <label for="email">Email *</label>
+              <input type="email" name="email" id="email" placeholder="email@example.com" required>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Quiz Date</legend>
+            <small>Not Supported for: Internet Explorer / Safari *</small>
+            <div>
+              <label for="date">Select Date</label>
+              <input type="date" name="date" id="date">
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>What does CSS stand for?</legend>
+            <div>
+              <input type="radio" id="radio-1" name="CSS" value="creative-style-sheets">
+              <label for="radio-1">Creative Style Sheets</label>
+            </div>
+            <div>
+              <input type="radio" id="radio-2" name="CSS" value="computer-style-sheets">
+              <label for="radio-2">Computer Style Sheets</label>
+            </div>
+            <div>
+              <input type="radio" id="radio-3" name="CSS" value="cascading-style-sheets">
+              <label for="radio-3">Cascading Style Sheets</label>
+            </div>
+            <div>
+              <input type="radio" id="radio-4" name="CSS" value="colorful-style-sheets">
+              <label for="radio-4">Colorful Style Sheets</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Check only HTML block elements</legend>
+            <div>
+              <input type="checkbox" id="checkbox-1" name="cheked-div" value="div">
+              <label for="checkbox-1">&lt;div&gt;</label>
+            </div>
+            <div>
+              <input type="checkbox" id="checkbox-2" name="cheked-menu" value="menu">
+              <label for="checkbox-2">&lt;menu&gt;</label>
+            </div>
+            <div>
+              <input type="checkbox" id="checkbox-3" name="cheked-span" value="span">
+              <label for="checkbox-3">&lt;span&gt;</label>
+            </div>
+            <div>
+              <input type="checkbox" id="checkbox-4" name="cheked-p" value="p">
+              <label for="checkbox-4">&lt;p&gt;</label>
+            </div>
+            <div>
+              <input type="checkbox" id="checkbox-5" name="cheked-i" value="i">
+              <label for="checkbox-5">&lt;i&gt;</label>
+            </div>
+            <div>
+              <input type="checkbox" id="checkbox-6" name="cheked-ul" value="ul">
+              <label for="checkbox-6">&lt;ul&gt;</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Select only HTML preprocessor:</legend>
+            <div>
+              <label for="preprocessor">Select preprocessor</label>
+              <select name="preprocessor" id="preprocessor">
+                <option value="SASS">SASS</option>
+                <option value="LESS">LESS</option>
+                <option value="Haml">Haml</option>
+                <option value="PostCSS">PostCSS</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Create basic HTML web page structure</legend>
+            <div>
+              <textarea name="textarea" rows="10" cols="30" placeholder="Enter HTML or CSS code here" required></textarea>
+            </div>
+          </fieldset>
+
+          <button type="submit" name="submit" form="form" value="Send">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
